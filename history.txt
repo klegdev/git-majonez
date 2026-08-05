@@ -1,0 +1,20 @@
+mkdir git-majonez
+cd git-majonez
+git init 
+touch main.cpp
+git add main.cpp
+git commit -m "Initial commit"
+git add main.cpp
+git commit -m "Farewell changed"
+git remote add origin https://github.com/klegdev/git-majonez.git
+git push -u origin master
+git branch cs
+git checkout cs
+git reset --hard HEAD~1
+git add main.cpp
+git commit -m "Greetings"
+git push origin cs
+git checkout master
+git merge cs
+git add main.cpp 
+git commit
